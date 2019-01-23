@@ -1,0 +1,77 @@
+{
+  "name": "assets/1TUeHqAXGnB",
+  "displayName": "Hot Dogs 🌭",
+  "authorName": "Chris Ross",
+  "description": "... they plump when you cook 'em.  ",
+  "createTime": "2017-06-22T15:31:33.118196Z",
+  "updateTime": "2019-01-20T10:30:57.943492Z",
+  "formats": [
+    {
+      "root": {
+        "relativePath": "model.obj",
+        "url": "https://poly.googleapis.com/downloads/1TUeHqAXGnB/415lW31rAL8/model.obj",
+        "contentType": "text/plain"
+      },
+      "resources": [
+        {
+          "relativePath": "materials.mtl",
+          "url": "https://poly.googleapis.com/downloads/1TUeHqAXGnB/415lW31rAL8/materials.mtl",
+          "contentType": "text/plain"
+        }
+      ],
+      "formatComplexity": {
+        "triangleCount": "3416"
+      },
+      "formatType": "OBJ"
+    },
+    {
+      "root": {
+        "relativePath": "model.gltf",
+        "url": "https://poly.googleapis.com/downloads/1TUeHqAXGnB/99xdtlNdxtX/model.gltf",
+        "contentType": "model/gltf+json"
+      },
+      "resources": [
+        {
+          "relativePath": "model.bin",
+          "url": "https://poly.googleapis.com/downloads/1TUeHqAXGnB/99xdtlNdxtX/model.bin",
+          "contentType": "application/octet-stream"
+        }
+      ],
+      "formatComplexity": {
+        "triangleCount": "3416"
+      },
+      "formatType": "GLTF"
+    },
+    {
+      "root": {
+        "relativePath": "model.gltf",
+        "url": "https://poly.googleapis.com/downloads/1TUeHqAXGnB/1vR6N15NHAt/model.gltf",
+        "contentType": "model/gltf+json"
+      },
+      "resources": [
+        {
+          "relativePath": "model.bin",
+          "url": "https://poly.googleapis.com/downloads/1TUeHqAXGnB/1vR6N15NHAt/model.bin",
+          "contentType": "application/octet-stream"
+        }
+      ],
+      "formatComplexity": {},
+      "formatType": "GLTF2"
+    }
+  ],
+  "thumbnail": {
+    "relativePath": "1TUeHqAXGnB.png",
+    "url": "https://lh3.googleusercontent.com/INyCR8ZxN74A8AwFmBnaI24nvrO93XRyPg9T_pSIa5r6A49HYBq7p2sBfoQrsCXW",
+    "contentType": "image/png"
+  },
+  "license": "CREATIVE_COMMONS_BY",
+  "visibility": "PUBLIC",
+  "isCurated": true,
+  "presentationParams": {
+    "orientingRotation": {
+      "w": 1
+    },
+    "colorSpace": "LINEAR",
+    "backgroundColor": "#fdd835"
+  }
+}
