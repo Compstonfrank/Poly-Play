@@ -10,11 +10,8 @@ import {
   Button,
   Modal
 } from 'react-native';
-// Let's alias ExpoTHREE.AR as ThreeAR so it doesn't collide with Expo.AR.
+
 import ExpoTHREE, { AR as ThreeAR, THREE } from 'expo-three';
-// Let's also import `expo-graphics`
-// expo-graphics manages the setup/teardown of the gl context/ar session, creates a frame-loop, and observes size/orientation changes.
-// it also provides debug information with `isArCameraStateEnabled`
 import { View as GraphicsView } from 'expo-graphics';
 import GooglePoly from '../API/GooglePoly';
 import APIkeys from '../constants/APIkeys';
@@ -53,24 +50,14 @@ export default class App extends React.Component {
     });
 
     this.scene = new THREE.Scene();
-    // This will create a camera texture and use it as the background for our scene
     this.scene.background = new ThreeAR.BackgroundTexture(this.renderer);
-    // Now we make a camera that matches the device orientation.
-    // Ex: When we look down this camera will rotate to look down too!
     this.camera = new ThreeAR.Camera(width, height, 0.01, 1000);
-
-    // Setup a light so we can see the cube color
-    // AmbientLight colors all things in the scene equally.
     this.scene.add(new THREE.AmbientLight(0xffffff));
-
-    // Create this cool utility function that let's us see all the raw data points.
     this.points = new ThreeAR.Points();
-    // // Add the points to our scene...
     this.scene.add(this.points);
   };
 
   onResize = ({ x, y, scale, width, height }) => {
-    // Let's stop the function if we haven't setup our scene yet
     if (!this.renderer) {
       return;
     }
@@ -85,9 +72,7 @@ export default class App extends React.Component {
       this.threeModel.rotation.x += 2 * delta;
       this.threeModel.rotation.y += 1.5 * delta;
     }
-    // This will make the points get more rawDataPoints from Expo.AR
     this.points.update();
-    // Finally render the scene with the AR Camera
     this.renderer.render(this.scene, this.camera);
   };
 
